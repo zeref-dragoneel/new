@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <style>
+        /* Define CSS classes for India and Germany */
+        .india-color {
+            background-color: orange !important;
+        }
+
+        .germany-color {
+            background-color: green !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Portal</h1>
+    
+    <!-- First Visualization -->
+    <div class='tableauPlaceholder' id='viz1718474701745' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CH&#47;CH5SDQ7KJ&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' /> 
+            <param name='path' value='shared&#47;CH5SDQ7KJ' /> 
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CH&#47;CH5SDQ7KJ&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+        </object>
+    </div>
+
+    <div id="task1-container"></div>
+
+    <!-- Second Visualization -->
+    <script type='text/javascript'>
+        var divEle1 = document.getElementById('viz1718474701745');
+        var vizEle1 = divEle1.getElementsByTagName('object')[0];
+        if (divEle1.offsetWidth > 800) {
+            vizEle1.style.width = '100%';
+            vizEle1.style.height = (divEle1.offsetWidth * 0.75) + 'px';
+        } else if (divEle1.offsetWidth > 500) {
+            vizEle1.style.width = '100%';
+            vizEle1.style.height = (divEle1.offsetWidth * 0.75) + 'px';
+        } else {
+            vizEle1.style.width = '100%';
+            vizEle1.style.height = '2577px';
+        }
+        var scriptElement1 = document.createElement('script');
+        scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizEle1.parentNode.insertBefore(scriptElement1, vizEle1);
+
+        var currHr = new Date().getHours();
+        if (currHr >= 15 && currHr < 18) {
+            var task1Container = document.getElementById('task1-container');
+            task1Container.innerHTML = `
+                <h1>Task1</h1>
+                <div class='tableauPlaceholder' id='viz1718554463996' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_task_all_isme&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='Book1_task_all_isme&#47;Dashboard1' />
+                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_task_all_isme&#47;Dashboard1&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>
+            `;
+
+            var divEle2 = document.getElementById('viz1718554463996');
+            divEle2.style.display = 'block';
+            var vizEle2 = divEle2.getElementsByTagName('object')[0];
+            if (divEle2.offsetWidth > 800) {
+                vizEle2.style.width = '100%';
+                vizEle2.style.height = (divEle2.offsetWidth * 0.75) + 'px';
+            } else if (divEle2.offsetWidth > 500) {
+                vizEle2.style.width = '100%';
+                vizEle2.style.height = (divEle2.offsetWidth * 0.75) + 'px';
+            } else {
+                vizEle2.style.width = '100%';
+                vizEle2.style.height = '2077px';
+            }
+            var scriptElement2 = document.createElement('script');
+            scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizEle2.parentNode.insertBefore(scriptElement2, vizEle2);
+        } else {
+            document.getElementById('task1-container').innerHTML = "<h1>Task1 content is available only between 3 PM and 6 PM.</h1>";
+        }
+    </script>
+
+    <!-- Third Visualization (Task 2) -->
+    <h1>Task 2</h1>
+    <div class='tableauPlaceholder' id='viz1718604359329' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Task2_17186042285700&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='Task2_17186042285700&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Task2_17186042285700&#47;Dashboard1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+        </object>
+    </div>
+
+    <!-- Latitude and Longitude Inputs and Button -->
+    <h2>Enter Latitude and Longitude</h2>
+    <label for="latitude">Latitude:</label>
+    <input type="text" id="latitude" name="latitude">
+    <br>
+    <label for="longitude">Longitude:</label>
+    <input type="text" id="longitude" name="longitude">
+    <br>
+    <button onclick="openMap()">Open Map</button>
+
+    <!-- JavaScript for opening map -->
+    <script type='text/javascript'>
+        var divEle3 = document.getElementById('viz1718604359329');
+        var vizEle3 = divEle3.getElementsByTagName('object')[0];                    
+        if (divEle3.offsetWidth > 800) { 
+            vizEle3.style.width = '100%';
+            vizEle3.style.height = (divEle3.offsetWidth * 0.75) + 'px';
+        } else if (divEle3.offsetWidth > 500) { 
+            vizEle3.style.width = '100%';
+            vizEle3.style.height = (divEle3.offsetWidth * 0.75) + 'px';
+        } else { 
+            vizEle3.style.width = '100%';
+            vizEle3.style.height = '2627px';
+        }                     
+        var scriptElement3 = document.createElement('script');                    
+        scriptElement3.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizEle3.parentNode.insertBefore(scriptElement3, vizEle3);
+
+        function openMap() {
+            var latitude = document.getElementById('latitude').value;
+            var longitude = document.getElementById('longitude').value;
+            if (latitude && longitude) {
+                var url = `https://www.google.com/maps?q=${latitude},${longitude}`;
+                window.open(url, '_blank');
+            } else {
+                alert('Please enter both latitude and longitude.');
+            }
+        }
+    </script>
+
+    <!-- Fourth Visualization (Task 3) -->
+    <h1>Task 3</h1>
+    <div class='tableauPlaceholder' id='viz1719316010494' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ta&#47;task31_17189687835870&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='task31_17189687835870&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ta&#47;task31_17189687835870&#47;Dashboard1&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+
+    <!-- JavaScript for fourth visualization with color swapping -->
+    <script type='text/javascript'>
+        var divElement4 = document.getElementById('viz1719316010494');
+        var vizElement4 = divElement4.getElementsByTagName('object')[0];
+        if (divElement4.offsetWidth > 800) {
+            vizElement4.style.width = '100%';
+            vizElement4.style.height = (divElement4.offsetWidth * 0.75) + 'px';
+        } else if (divElement4.offsetWidth > 500) {
+            vizElement4.style.width = '100%';
+            vizElement4.style.height = (divElement4.offsetWidth * 0.75) + 'px';
+        } else {
+            vizElement4.style.width = '100%';
+            vizElement4.style.height = '2377px';
+        }
+        var scriptElement4 = document.createElement('script');
+        scriptElement4.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement4.parentNode.insertBefore(scriptElement4, vizElement4);
+
+        // Color swapping logic for the last visualization
+        var currHr = new Date().getHours();
+        if (currHr >= 12 && currHr < 18) {
+            divElement4.classList.add('india-color');
+        } else {
+            divElement4.classList.add('germany-color');
+        }
+    </script>
+</body>
+</html>
